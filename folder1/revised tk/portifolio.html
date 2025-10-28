@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio website</title>
+  <link rel="stylesheet" href="portifolio.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/tk.png" alt="Tewodros Logo">
+    </div>
+
+    <div class="menu-icon" id="menu-icon"><i class="fas fa-bars"></i></div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Tewodros Kassahun</span></h1>
+      <p>A passionate Computer Science student skilled in HTML, CSS, C++ and Java.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <div class="home-image">
+      <img src="images/tk.jpg" alt="Tewodros Kassahun Photo">
+    </div>
+  </section>
+
+    <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    
+    <div class="about-photo">
+      <img src="images/bestimage.jpg" alt="Tewodros Kassahun Photo">
+    </div>
+
+    <div class="about-info">
+  <p>Hello! I’m <strong>Tewodros Kassahun</strong>, a third-year Computer Science student at the University of Gondar, passionate about software development, web design, and programming. I completed my secondary education at Abrhawoatsibeha Secondary School, where I developed a strong foundation in science and technology.</p>
+
+  <p>I am committed to continuous learning and enjoy applying my skills in coding, problem-solving, and creating innovative projects.</p>
+
+  <h2 class="skills-title">My Skills</h2>
+
+   <div class="skills-row">
+  <div class="skill-box" onclick="toggleInfo(this)">
+    <h3>HTML</h3>
+    <p>HyperText Markup Language (HTML) is used to structure web pages and content.</p>
+    <div class="more-info">HTML is the backbone of every website. It defines the layout and semantics of web pages.</div>
+  </div>
+
+  <div class="skill-box" onclick="toggleInfo(this)">
+    <h3>CSS</h3>
+    <p>Cascading Style Sheets (CSS) is used to style and layout web pages.</p>
+    <div class="more-info">CSS controls colors, fonts, spacing, and makes your site look beautiful.</div>
+  </div>
+
+  <div class="skill-box" onclick="toggleInfo(this)">
+    <h3>C++</h3>
+    <p>C++ is a high-performance programming language used for system/software development.</p>
+    <div class="more-info">C++ supports object-oriented programming and is used in games, systems, and applications.</div>
+  </div>
+</div>
+
+</div>
+
+  </div>
+</section>
+
+  <section id="services" class="services">
+  <h2>My Services</h2>
+<div class="services-row">
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>I create responsive and modern web designs.</p>
+    </div>
+    <div class="service-box">
+      <h3>Software Development</h3>
+      <p>I develop efficient C++ and Java-based applications.</p>
+    </div>
+    <div class="service-box">
+      <h3>Problem Solving</h3>
+      <p>I provide algorithmic problem-solving support and debugging for programming challenges, helping others write optimal and clear code.</p>
+    </div>
+  </div>
+</section>
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-box">
+        
+        <a href="library mangment.zip"download><h3>Object Oriented Orogramming</h3></a>
+        <p>A  project demonstrating Object-Oriented Programming concepts using C++ and Java.</p>
+      </div>
+      <div class="project-box">
+        
+        <a href="ICT Infrastructure Simulation.docx"target="-blank"><h3>Network Simulation</h3></a>
+        <p>Designed and simulated a Cisco-based network infrastructure using Packet Tracer.</p>
+      </div>
+      <div class="project-box">
+        
+        <a href="Farm_Management_DB_Schema.pdf" target="-blank"><h3>Database Management System</h3></a>
+        <p>Developed a small DBMS project demonstrating CRUD operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i> +251 920768249</p>
+      <p><i class="fab fa-telegram"></i> <a href="https://t.me/kassTE23" rel="noopener"  target="_blank">@kassTE23</a></p>
+    </div>
+
+    <!-- Contact Icons -->
+    <div class="contact-icons">
+      <a href="mailto:teddykass23@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61580840367883" rel="noopener"  target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/invites/contact/?igsh=1kp6dp79e3946&utm_content=zy03ni6" rel="noopener"    target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/tewodkass" rel="noopener"  target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="register-form">
+      <h3>Send Me a Message</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+        <textarea id="message" placeholder="Enter Your Message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tewodros Kassahun. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
